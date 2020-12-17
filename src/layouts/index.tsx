@@ -6,26 +6,41 @@ const { Header, Content, Footer } = Layout;
 const { Search } = Input;
 
 export default ({ children }: { children: any }) => {
-
   const menu = (
     <Menu className={styles.dropdownMenu} theme="dark">
       <Menu.Item>
-        <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="http://www.alipay.com/"
+        >
           Home
         </a>
       </Menu.Item>
       <Menu.Item>
-        <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="http://www.taobao.com/"
+        >
           Hot
         </a>
       </Menu.Item>
       <Menu.Item>
-        <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="http://www.tmall.com/"
+        >
           Trending
         </a>
       </Menu.Item>
       <Menu.Item>
-        <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="http://www.tmall.com/"
+        >
           Newest
         </a>
       </Menu.Item>
@@ -38,18 +53,18 @@ export default ({ children }: { children: any }) => {
           <Dropdown overlay={menu}>
             <MenuOutlined className={styles.menuIcon} />
           </Dropdown>
-            <Search
-              placeholder="Enter movie name"
-              allowClear
-              className={styles.searchBar}
-              enterButton="Search"
-            />
-          <Button type="primary">Sign In</Button>
-
+          <Search
+            placeholder="Enter movie name"
+            allowClear
+            className={styles.searchBar}
+            enterButton="Search"
+          />
+          <Button type="primary" className={styles.buttonSignin}>
+            Sign In
+          </Button>
         </Header>
-        <Content>{children}</Content>
+        <Content className={styles.content}>{children}</Content>
       </Layout>
     </div>
-
   );
 };
