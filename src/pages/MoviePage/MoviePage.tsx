@@ -19,7 +19,6 @@ export default () => {
     movies.map(movie => {
       return (
         <Card
-          bordered={true}
           className={styles.bannerCard}
           cover={
             <img
