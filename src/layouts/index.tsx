@@ -47,7 +47,7 @@ export default ({ children }: { children: any }) => {
     </Menu>
   );
   return (
-    <div>
+    <div className={styles.mainDiv}>
       <Layout>
         <Header>
           <Dropdown overlay={menu}>
@@ -57,7 +57,6 @@ export default ({ children }: { children: any }) => {
             placeholder="Enter movie name"
             allowClear
             className={styles.searchBar}
-            enterButton="Search"
           />
           <Button type="primary" className={styles.buttonSignin}>
             Sign In
