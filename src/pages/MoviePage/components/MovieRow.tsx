@@ -22,7 +22,7 @@ export default ({
   ];
   return (
     <div className={className}>
-      <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>{cardList}</Row>
+      <Row gutter={[32, 32]}>{cardList}</Row>
     </div>
   );
 };
