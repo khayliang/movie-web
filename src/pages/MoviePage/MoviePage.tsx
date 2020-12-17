@@ -1,13 +1,13 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { Card, Button, Carousel } from 'antd';
 import styles from './MoviePage.less';
 import MovieRow from './components/MovieRow';
 import MovieData from '../../types/movieDataInterface';
-import {getMovies} from '../../services/api'
+import { getMovies } from '../../services/api';
 const { Meta } = Card;
 
 export default () => {
-  const [movies, setMovies] = useState([] as MovieData[])
+  const [movies, setMovies] = useState([] as MovieData[]);
 
   useEffect(() => {
     getMovies().then((val: MovieData[]) => {
