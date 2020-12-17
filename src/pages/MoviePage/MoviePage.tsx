@@ -43,7 +43,7 @@ export default () => {
   ];
   return (
     <div>
-      <Carousel autoplay autoplaySpeed={3000}>
+      <Carousel autoplay autoplaySpeed={5000}>
         {carouselList}
       </Carousel>
 
