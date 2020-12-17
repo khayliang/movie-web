@@ -3,5 +3,6 @@ export default interface MovieData {
   ratings: number;
   actors: string[];
   imageUrl: string;
+  bannerUrl: string;
   description: string;
 }
