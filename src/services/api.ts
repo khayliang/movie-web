@@ -8,6 +8,6 @@ export const getMovies = async (): Promise<MovieData[]> => {
       method: 'get',
     },
   );
-  const movies: MovieData[] = response.movies;
+  const movies: MovieData[] = response.message;
   return movies;
 };
