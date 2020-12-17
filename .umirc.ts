@@ -1,7 +1,7 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
-
+  publicPath: "khayliang.github.io/movie-web",
   nodeModulesTransform: {
     type: 'none',
   },
