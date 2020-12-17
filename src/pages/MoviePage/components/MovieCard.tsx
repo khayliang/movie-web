@@ -5,11 +5,12 @@ import styles from './MovieCard.less';
 
 const { Meta } = Card;
 
-export default ({ title, imageUrl, ratings, actors }: MovieData) => {
+export default ({ title, imageUrl, ratings, actors, description }: MovieData) => {
   const content = (
-    <div>
+    <div className={styles.cardContent}>
       <Rate allowHalf defaultValue={ratings} />
       <p>{`Actors: ${actors.toString()}`}</p>
+      <p>{description}</p>
       <Button type="primary">Book now</Button>
     </div>
   );
@@ -20,7 +21,7 @@ export default ({ title, imageUrl, ratings, actors }: MovieData) => {
         className={styles.cardStyle}
         cover={<img alt="example" src={imageUrl} />}
       >
-        <Meta title={title} />
+        <Meta title={title}/>
       </Card>
     </Popover>
   );
